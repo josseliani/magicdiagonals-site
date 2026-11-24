@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e1220"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Risk Calculator"><meta name="description" content="Free position size and daily risk-limit calculator for traders.">
+<title>Advanced Risk Calculator</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-apple.png"><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app-shell"><header class="top"><div><div class="brand" id="brand">MAGIC DIAGONALS</div><h1 id="title">Risk calculator</h1></div><div class="top-right"><select id="language" aria-label="Language"><option value="en">EN</option><option value="ru">RU</option><option value="de">DE</option><option value="es">ES</option><option value="ja">日本語</option><option value="zh">中文</option></select></div></header>
+<nav class="tabs" aria-label="Calculator sections"><button type="button" id="tab-calc" class="selected" aria-current="page">Calculator</button><button type="button" id="tab-guide">Settings & install</button></nav>
+<main>
+<section id="panel-calc" class="panel-calc"><div class="layout">
+<div class="result-col"><section id="result-card" class="result-card" aria-live="polite"><div class="result-head"><span id="label-position">POSITION SIZE</span><strong id="signal" class="signal good">WITHIN LIMIT</strong></div><div class="lot-line"><strong id="lots">—</strong><span id="unit-lots">lots</span></div><p id="risk-display">—</p><div class="rule"></div><p id="limit-note" class="limit-note">—</p><div class="figures"><div><span id="before-label">Available before trade</span><strong id="before">—</strong></div><div><span id="after-label">Remaining after trade</span><strong id="after">—</strong></div></div><div class="meter"><div id="meter-fill"></div></div><p class="meter-caption" id="meter-caption">—</p></section>
+<div class="safe-card" id="safe-card" hidden><span id="safe-label">Maximum size within remaining limit</span><strong id="safe-lots">—</strong></div>
+<p class="disclaimer" id="general-note">Planning aid only. Check your broker's specifications.</p></div>
+<div class="input-col"><div class="presets" role="group" aria-label="Instrument"><button type="button" data-preset="eur">EURUSD</button><button type="button" data-preset="gold">Gold</button><button type="button" data-preset="nas" class="active">NASDAQ</button></div>
+<form class="fields" id="form" onsubmit="return false">
+<label><span id="label-balance">Balance, USD</span><input id="balance" type="number" min="0" step="any" value="10000" inputmode="decimal"></label>
+<label><span id="label-risk">Risk per trade, %</span><input id="risk" type="number" min="0" step="any" value="1" inputmode="decimal"></label>
+<label><span id="label-entry">Entry price</span><input id="entry" type="number" min="0" step="any" value="20000" inputmode="decimal"></label>
+<label><span id="label-stop">Stop price</span><input id="stop" type="number" min="0" step="any" value="19950" inputmode="decimal"></label>
+<label><span id="label-today">Today's result, USD</span><input id="today" type="number" step="any" value="-350" inputmode="decimal"></label>
+<label><span id="label-daily">Daily limit, %</span><input id="daily" type="number" min="0" max="100" step="any" value="5" inputmode="decimal"></label>
+</form>
+<details id="broker"><summary><span id="broker-summary">Contract size 1 · Lot step 0.01</span><span id="broker-edit">Edit</span></summary><div class="fields broker-fields">
+<label><span id="label-contract">Contract size</span><input id="contract" type="number" min="0" step="any" value="1" inputmode="decimal"></label>
+<label><span id="label-step">Lot step</span><input id="step" type="number" min="0" step="any" value="0.01" inputmode="decimal"></label>
+<label><span id="label-min">Minimum lot</span><input id="minimum" type="number" min="0" step="any" value="0.01" inputmode="decimal"></label>
+<label><span id="label-factor">USD per profit currency unit</span><input id="conversion" type="number" min="0" step="any" value="1" inputmode="decimal"></label>
+</div><p class="setting-note" id="conversion-note">For USD profit instruments use 1. For other quote currencies, enter the current USD conversion rate.</p></details>
+<p class="input-note" id="validation"></p></div></div>
+<footer class="inside-footer"><button type="button" class="text-button" id="open-guide">How to install ↗</button><a id="rcc-link" href="https://whop.com/checkout/plan_AEwK72eCJAQSE/" target="_blank" rel="noopener">RCC Pro ↗</a></footer></section>
+<section id="panel-guide" class="panel-guide" hidden><h2 id="guide-title">Settings & installation</h2><p id="guide-intro">Preset examples are based on the shown RoboForex MT5 symbol specifications for a USD account.</p><div class="guide-box"><h3 id="spec-title">Default presets</h3><div class="spec-scroll"><table><thead><tr><th id="th-market">Market</th><th id="th-contract">Contract size</th><th id="th-step">Lot step</th><th id="th-min">Min lot</th></tr></thead><tbody><tr><th>EURUSD</th><td>100,000</td><td>0.01</td><td>0.01</td></tr><tr><th id="th-gold">Gold / XAUUSD</th><td>100</td><td>0.01</td><td>0.01</td></tr><tr><th>NASDAQ / .USTECHCash</th><td>1</td><td>0.01</td><td>0.01</td></tr></tbody></table></div><p id="spec-note">Before trading, open the symbol specifications in MT5 and check Contract Size, Volume Step and Minimum Volume for your own broker and account type.</p></div>
+<div class="guide-box"><h3 id="install-title">Install on your device</h3><p id="install-instructions">iPhone Safari: Share → Add to Home Screen → Add. The calculator opens from its own icon.</p><p id="install-browser-note">Installation is controlled by your browser; this page cannot install itself automatically.</p><button type="button" id="install-button" class="install-button" hidden>Install app</button></div><div class="guide-box"><h3 id="about-title">Important for accurate sizing</h3><p id="about-note">Risk = price distance × contract size × lots × USD conversion. The calculator assumes a linear price-to-profit relationship. Forex crosses quoted outside USD need conversion into the account currency. It does not include spreads, commissions, slippage, margin limits or open trade exposure. The daily result must be entered by you; it is not read from MT5.</p></div><button type="button" class="back-button" id="back-calc">← Calculator</button></section>
+</main></div><script src="app.js" defer></script><script src="../umami-site.js" defer></script></body></html>
