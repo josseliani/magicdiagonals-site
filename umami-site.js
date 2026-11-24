@@ -5,6 +5,7 @@
   const pending=[];
   const send=(name,data)=>{try{Promise.resolve(window.umami.track(name,data)).catch(()=>{});}catch{}};
   window.mdTrack=(name,data={})=>{if(!production)return;const payload={lang:document.documentElement.lang||'en',...data};if(typeof window.umami?.track==='function')send(name,payload);else if(pending.length<30)pending.push([name,payload]);};
+  {const x=document.createElement('script');x.src='/md-extras.js';x.defer=true;document.head.append(x);}
   if(!production)return;
   // Anonymous, cookie-free traffic statistics for the public Magic Diagonals pages.
   const script = document.createElement('script');
