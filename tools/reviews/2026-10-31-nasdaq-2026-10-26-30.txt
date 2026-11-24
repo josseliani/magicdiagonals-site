@@ -1,0 +1,183 @@
+title: NASDAQ Pre-Market Range Sweep — Weekly Review, October 26–30, 2026
+slug: nasdaq-2026-10-26-30
+dates: October 26–30, 2026
+date: 2026-10-31
+result: +10R
+tv: https://www.tradingview.com/chart/NAS100USD/VPjZpXo7-NASDAQ-Pre-Market-Range-Sweep-Indicator-October-26-30/
+cover: https://s3.tradingview.com/v/VPjZpXo7_big.png
+summary: This week, we're once again reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on real charts, using two types of signals: the main reversal signals after a liquidity sweep beyond the pre-market range,…
+---
+## Nasdaq pre-market range sweep — weekly indicator review
+
+October 26–30, 2026 | +10R
+
+This week, we're once again reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on real charts, using two types of signals: the main reversal signals after a liquidity sweep beyond the pre-market range, and the new Expansion signals we added just two weeks ago.
+
+As usual, I'm using the 1-minute chart with the indicator's default settings. I haven't optimized or adjusted anything specifically for this past week.
+
+## How we count the results
+
+We calculate results directly from the entry price provided by the indicator. We don't look back and search for a better entry on a pullback, an FVG, or any additional confirmation.
+
+Even when price travels significantly further, we count each successful signal as only +1R, using a fixed 1:1 target relative to the stop used in the review.
+
+This allows us to evaluate the signals under a consistent approach rather than measure the maximum possible profit from perfect trade management.
+
+### Monday, October 26
+
+After a liquidity sweep beyond the pre-market range, the first BUY signal appeared around 29,161.
+
+Price reached the 1:1 target and then continued moving higher. With active trade management, it would have been possible to capture significantly more, but according to our review rules, we record only +1R.
+
+Later, the indicator generated an Expansion signal.
+
+This signal also reached its 1:1 target. Whether using a tighter stop or placing the protective stop beyond the more distant extreme shown on the chart, the movement was sufficient to achieve our minimum 1:1 risk-to-reward ratio.
+
+2 signals → 2 targets reached
+Monday's result: +2R
+
+@img https://s3.tradingview.com/snapshots/c/cZVpYW4Y.png
+
+### Tuesday, October 27
+
+After liquidity was swept above the upper boundary of the pre-market range, the indicator generated a SELL signal around 29,469.
+
+Price moved down to the target near 29,395, delivering +1R.
+
+The market then returned inside the range, moved beyond its boundaries again, and generated an Expansion BUY signal.
+
+The subsequent movement was much stronger than our minimum target. With active trade management, considerably more could have been captured, but once again, we record only +1R.
+
+2 signals → 2 targets reached
+Tuesday's result: +2R
+
+@img https://s3.tradingview.com/snapshots/x/Xoi6WG8c.png
+
+### Wednesday, October 28
+The most interesting and challenging day of the week
+
+Wednesday was FOMC decision day. Personally, I prefer to avoid trading on days like this, especially immediately before the announcement and during the market's initial reaction.
+
+But since we're reviewing the indicator's signals consistently, let's examine this day as well.
+
+**The first BUY: a long wait for the target**
+
+The first BUY signal appeared at approximately 10:05 AM New York time, around 29,728, following a liquidity sweep beyond the range boundary.
+
+After the entry, price entered a prolonged consolidation. In the illustrated setup, the position remained open for several hours. It wasn't until around 2:30 PM New York time that the market finally reached the 1:1 target.
+
+And this is where something particularly interesting happened.
+
+**An opposite Expansion SELL appeared**
+
+While the first BUY setup was still open, the indicator generated an opposite signal — Expansion SELL.
+
+For a trader, this can be a difficult situation. Seeing a new SELL signal, you might decide that the bullish scenario is no longer valid, close the original BUY, and open a SELL position instead.
+
+But what actually happened?
+
+The Expansion SELL hit its stop-loss. The original BUY's protective stop was never touched, and that setup eventually reached its target.
+
+Switching direction too quickly could therefore have meant missing the BUY target and taking a loss on the SELL.
+
+It's a good example of why an opposite signal doesn't necessarily mean that an existing position should automatically be closed.
+
+If your account conditions allow positions in opposite directions, you can technically consider both signals independently, while accounting for the combined risk in advance.
+
+But that doesn't mean you must take every signal. Your risk limits and trading plan remain more important than the number of opportunities.
+
+**A third signal: Expansion BUY**
+
+At approximately 2:44 PM New York time, a third signal appeared — Expansion BUY.
+
+After a pullback, the market moved sharply higher. Around 4:00 PM New York time, following the FOMC events, we saw a strong upward movement with sharp price spikes.
+
+This third signal also reached its 1:1 target.
+
+Despite the prolonged consolidation, opposite signals, and elevated volatility, our fixed-result model finished positive:
+
+First BUY → +1R
+Expansion SELL → −1R
+Expansion BUY → +1R
+
+3 signals → 2 targets reached → 1 stop-loss
+Wednesday's result: +1R
+
+Wednesday reminds us that a successful signal doesn't necessarily work quickly, and the appearance of an opposite signal doesn't prove that the original scenario has stopped working.
+
+@img https://s3.tradingview.com/snapshots/x/xfMDs5xf.png
+
+### Thursday, October 29
+
+On Thursday, the indicator generated three signals.
+
+The first SELL appeared after a liquidity sweep above the upper boundary of the pre-market range and reached its 1:1 target.
+
+Later, an Expansion SELL appeared, followed by another Expansion SELL continuing the bearish movement.
+
+Both Expansion signals reached their targets as well. Treating them as separate setups with partially overlapping holding periods, the movement was sufficient to deliver at least 1:1 for each illustrated entry and stop.
+
+A particularly strong downward move began after 4:00 PM New York time. NASDAQ continued falling far beyond the initial targets.
+
+With active trade management, the potential result was considerably higher, but we don't increase our recorded results after seeing what happened on the chart.
+
+3 signals → 3 targets reached
+Thursday's result: +3R
+
+@img https://s3.tradingview.com/snapshots/o/oFrjx6xq.png
+
+### Friday, October 30
+
+On Friday, we once again saw a classic reversal setup.
+
+After liquidity was swept beyond the pre-market range boundary, price returned inside the range, and the indicator generated a BUY signal.
+
+The first signal reached its 1:1 target.
+
+Later, an Expansion SELL appeared, followed by a strong continuation lower in NASDAQ.
+
+This signal reached our minimum target and also offered room for further trade management: taking partial profits, moving the stop-loss to breakeven, or holding a portion of the position to capture the continuation.
+
+Depending on the management approach, the result could have been significantly greater than +1R. But in this review, we don't claim the maximum chart movement as our own profit.
+
+2 signals → 2 targets reached
+Friday's result: +2R
+
+@img https://s3.tradingview.com/snapshots/z/zLdlnrKy.png
+
+## The week in numbers
+
+Over five trading days, the indicator generated 12 signals, including the main reversal entries and the new Expansion signals.
+
+Results using the fixed 1:1 evaluation model:
+
+Monday → +2R
+Tuesday → +2R
+Wednesday → +1R
+Thursday → +3R
+Friday → +2R
+
+12 signals | 11 targets reached | 1 stop-loss
+5 positive days out of 5
+Total result: +10R
+
+These statistics represent chart-based signal results, not the actual performance of a trading account. They don't include commissions, slippage, or execution conditions. Overlapping positions can also increase the combined risk.
+
+## What does this week show us?
+
+The most important observation this week is that the Expansion signals added new entry opportunities alongside the original range-return signals.
+
+Liquidity sweep → Reversal signal → Return toward the range
+Range breakout → Expansion signal → Continuation opportunity
+
+At the same time, Wednesday demonstrated why every signal needs to be evaluated within a predefined trading plan.
+
+An opposite signal is new information. It doesn't automatically invalidate an earlier setup whose protective stop remains untouched.
+
+We also saw why the time needed to reach a target matters. A setup that takes several hours to resolve may not suit a trader who wants short intraday positions, even if it eventually reaches +1R.
+
+I continue to use the indicator's default settings and share the results without adjusting them to fit historical price action.
+
+Very simple indicator. Very simple strategy.
+
+Please use it, enjoy it, and be profitable next week.

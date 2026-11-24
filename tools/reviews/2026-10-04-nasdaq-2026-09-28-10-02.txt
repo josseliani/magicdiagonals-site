@@ -1,0 +1,296 @@
+title: NASDAQ Pre-Market Range Sweep — Weekly Review, September 28 – October 2, 2026
+slug: nasdaq-2026-09-28-10-02
+dates: September 28 – October 2, 2026
+date: 2026-10-04
+tv: https://www.tradingview.com/chart/NAS100USD/HfzoIAq7-NASDAQ-Pre-Market-Range-Sweep-Indicator-Sep-28-Oct2/
+cover: https://s3.tradingview.com/h/HfzoIAq7_big.png
+summary: This weekly review is about how the NASDAQ Pre-Market Range Sweep indicator works in real market conditions — how I read its signals, manage them, and use higher-timeframe structure to put them into context.
+---
+This weekly review is about how the NASDAQ Pre-Market Range Sweep indicator works in real market conditions — how I read its signals, manage them, and use higher-timeframe structure to put them into context.
+
+The standard signal window in the indicator is 120 minutes. For this review only, I’m going to extend the analysis to 360 minutes so we can include more signals and see what happened during a larger part of the session.
+
+First, we’ll look at the signals exactly as they appeared on the 1-minute chart.
+
+Then I’ll step back to the 5-minute chart and show you how the same signals can look very different when the Stop Loss is based on a larger market structure instead of the local 1-minute noise.
+
+As always, the Entry / Stop Loss / Take Profit markings are informational. The indicator gives us the setup and the range structure, but trade management is still up to the trader.
+
+### Monday, Sep 28
+
+Monday gave us two BUY signals.
+
+The first BUY came around 30400.
+
+Stop Loss: 30339
+
+This trade ended with a Stop Loss.
+
+The second BUY came later, around 18:33.
+
+Entry: 30256
+Stop Loss: 30202
+
+This one was much more interesting.
+
+By the time price reached the lower boundary of the range, the trade had already given approximately 2R.
+
+The middle of the range was around 30437, which gave us approximately 3.5R from the original risk.
+
+So depending on how the position was managed, there were several perfectly reasonable places to take profit.
+
+1R was available.
+The lower boundary of the range gave us approximately 2R.
+The middle of the range gave us more than 3R.
+
+Monday: one Stop Loss followed by a trade that offered approximately 3.5R toward the middle of the range.
+
+@img https://s3.tradingview.com/snapshots/g/GeMXIa5A.png
+
+### Tuesday, Sep 29
+
+Tuesday gave us three BUY signals within the extended analysis window.
+
+The first BUY came around 30416.
+
+There was really nowhere close to hide the Stop Loss, so I would place it below the last obvious impulse low around 30328.
+
+That immediately creates a problem.
+
+With a Stop Loss this wide, the available move did not even give us 1R. In fact, even the upper boundary of the range would not have offered a full 1R from this entry.
+
+The trade moved approximately 0.5R in our direction and eventually ended with a Stop Loss.
+
+And this is already something worth thinking about before entering a trade:
+
+If the available space to the range target doesn’t even give us 1R, do we really want to take the trade?
+
+The second BUY came around 30355.
+
+Again, there wasn’t much nearby structure for a tight Stop Loss. Using approximately 30300 as the Stop Loss, this trade also failed.
+
+Another −1R.
+
+So now we have two Stop Losses.
+
+Then came the third BUY, around 20:22.
+
+Entry: 30316
+Stop Loss: 30275
+
+And this time the result was completely different.
+
+Price moved through the range and eventually reached its upper boundary, giving approximately 4R from the original risk.
+
+There were several opportunities to manage the position along the way — 1R, the lower boundary, the middle of the range, partial profit, moving the rest to breakeven.
+
+What is especially interesting is that even if we had protected the position at breakeven after reaching 1R, price would not have returned to the entry. The rest of the position could have continued toward the upper boundary.
+
+Tuesday: two Stop Losses followed by approximately +4R. If all three signals are taken mechanically, the day still finishes around +2R.
+
+@img https://s3.tradingview.com/snapshots/0/0z9eNgVP.png
+
+### Wednesday, Sep 30
+
+Wednesday is very simple.
+
+The indicator gave us no 1-minute signals.
+
+And that is perfectly fine.
+
+No signal means no trade. We don’t need to manufacture one just because the market is open.
+
+@img https://s3.tradingview.com/snapshots/2/24Nwyw00.png
+
+### Thursday, Oct 1
+
+Thursday was the difficult day of the week.
+
+Three BUY signals.
+Three Stop Losses.
+
+Price kept moving lower, and using the local 1-minute structure for the stops, all three trades failed.
+
+There is no reason to make those trades look better after the fact.
+
+Thursday: three signals, three Stop Losses, −3R.
+
+But keep this day in mind.
+
+We’ll look at exactly the same situation again on the 5-minute chart in a moment.
+
+@img https://s3.tradingview.com/snapshots/1/1k2IUqfq.png
+
+### Friday, Oct 2
+
+Friday gave us two SELL signals.
+
+The first trade:
+
+Entry: approximately 30943
+Stop Loss: approximately 30997
+
+Price moved in our direction and gave us 1R.
+
+It did not reach the middle of the range, but 1R was delivered.
+
+First trade: +1R.
+
+Then came the second SELL.
+
+Entry: approximately 30932
+Stop Loss: approximately 30979
+
+This time price continued toward the middle of the range.
+
+The move gave approximately 2.23R.
+
+Second trade: approximately +2.23R.
+
+@img https://s3.tradingview.com/snapshots/d/DiGDZs9P.png
+
+## Week in numbers — 1-minute signals
+
+Now let’s count everything exactly as we reviewed it.
+
+10 trades in total.
+
+4 profitable trades.
+6 losing trades.
+
+The profitable trades delivered approximately:
+
+Monday: +3.5R
+Tuesday: +4R
+Friday: +1R and +2.23R
+
+Total from profitable trades: +10.73R
+
+The six losing trades:
+
+Total losses: −6R
+
+That leaves us with approximately:
+
++4.73R for the week.
+
+And notice something important here.
+
+Only 4 out of 10 trades were profitable.
+
+That is a 40% win rate.
+
+We had six Stop Losses.
+We had an entire day with no signals.
+We even had one day with three losing trades in a row.
+
+And the week still finished positive.
+
+This is exactly why I don’t judge a strategy only by its win rate. Risk-to-reward matters.
+
+## Now let’s step back to the 5-minute chart
+
+Now I want to show you something else.
+
+I’m not saying that trading these signals from the 5-minute perspective will automatically give better results.
+
+It simply gives us another way to look at the same market.
+
+Less noise.
+Less rushing.
+Fewer individual trade decisions.
+And a clearer view of where the larger trade idea is actually invalidated.
+
+Tuesday and Thursday are very good examples.
+
+### Tuesday, The Same Signals From A 5-Minute Perspective
+
+🔍On the 1-minute chart, we treated the BUY signals as separate trades and got two Stop Losses before the third BUY eventually gave us the strong move.
+
+But look at the larger structure.
+
+There was an obvious low visible on the 5-minute chart.
+
+Instead of placing a new tight Stop Loss around every individual 1-minute BUY signal, we could treat those BUY signals as part of the same larger trading idea and place the Stop Loss below that structural low.
+
+If we take the first BUY area around 30540 and use the larger 5-minute low for invalidation, price eventually reaches the range boundary.
+
+That gives approximately 1R.
+
+Price later continued higher, but that is not important here.
+
+The important part is that the larger structure remained valid while the 1-minute chart was creating noise inside it.
+
+### Thursday, An Even Better Example
+
+➜Thursday is probably the clearest example of this.
+
+On the 1-minute chart:
+
+three BUY signals,
+three local Stop Losses,
+−3R.
+
+Now look at exactly the same move on the 5-minute chart.
+
+There was a clear structural low from Wednesday around 14:20.
+
+If we treated the Thursday BUY signals as one larger trading idea and placed the Stop Loss below that impulse low, even the deep sweep of the range on Thursday would not have touched the stop.
+
+Price then reversed.
+
+It reached the upper boundary of the range, giving approximately 3R, and later continued even higher.
+
+Again, I am not changing Thursday from −3R to +3R in our weekly statistics.
+
+The three Stop Losses remain three Stop Losses.
+
+I’m showing this only to demonstrate how much the result can change depending on where we decide that the original trade idea is actually invalidated.
+
+The 1-minute chart gives us the signals. The 5-minute structure can help us decide where the trade idea is actually wrong.
+
+@img https://s3.tradingview.com/snapshots/m/Mw4tW0E1.png
+
+## One more thing to notice
+
+Now let’s look at the entire week on the 5-minute chart.
+
+Every daily range is still visible.
+
+And this is where things get a little more interesting.
+
+On Monday, price swept below the range but did not reach its upper boundary that day.
+
+But that unfinished level did not simply disappear.
+
+Price eventually reached Monday’s upper boundary on Wednesday.
+
+Wednesday itself gave us no 1-minute signals, but its range still mattered.
+
+After the sweep to the upside, price first reacted around the middle of the range.
+
+Then we got another sweep higher, and eventually price travelled all the way back to the lower boundary of Wednesday’s range.
+
+It reached that level on Thursday.
+
+This is why I like keeping previous ranges on the chart.
+
+💡The trading day can end. The level doesn’t necessarily stop working.
+
+By the end of the week, we are no longer looking at five isolated daily ranges.
+
+We are looking at a map of liquidity levels created throughout the week.
+
+Most of those boundaries were eventually reached or swept.
+
+And now we still have one interesting unfinished level from Friday:
+
+the lower boundary of Friday’s range around 30916.
+
+I’m going to leave it on the chart.
+
+Let’s see what happens next week and whether the market comes back for it.
+
+Very simple indicator. Very simple strategy.
+
+Please use it, enjoy it, and be profitable next week.

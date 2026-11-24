@@ -1,0 +1,141 @@
+title: NASDAQ Pre-Market Range Sweep — Weekly Review, October 5–9, 2026
+slug: nasdaq-2026-10-05-09
+dates: October 5–9, 2026
+date: 2026-10-11
+tv: https://www.tradingview.com/chart/NAS100USD/QsDm2404-NASDAQ-Pre-Market-Range-Sweep-Indicator-Weekly-Review-Oct-5-9/
+cover: https://s3.tradingview.com/q/QsDm2404_big.png
+summary: Another week of reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on the 1-minute chart.
+---
+Another week of reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on the 1-minute chart.
+
+But first, remember that untested level from Friday, October 2, which we left on our chart in last week's review?
+
+Keep it in mind. Something interesting happened this week.
+
+### Monday, October 5
+
+One SELL signal. The market continued moving higher, and our trade hit its stop-loss.
+
+Result: −1R
+
+@img https://s3.tradingview.com/snapshots/g/GrVLTxqG.png
+
+### Tuesday, October 6
+
+One SELL signal, with entry already inside the pre-market range.
+
+Price reached the range midpoint and moved slightly below it. We could take partial profit at the midpoint or close the trade at 1R.
+
+Result: +1R
+
+@img https://s3.tradingview.com/snapshots/t/tnmMy7h4.png
+
+### Wednesday, October 7
+
+One BUY signal.
+
+Price reached the range midpoint, where we could take partial profit, and then continued to the upper boundary.
+
+Moving the stop to breakeven after 1R would not have stopped us out.
+
+Result: up to +1.8R
+
+@img https://s3.tradingview.com/snapshots/c/C9iv4AGN.png
+
+### Thursday, October 8
+
+One SELL signal from the indicator at approximately 16:41.
+
+The trade reached its 1R target.
+
+But then something interesting happened.
+
+Right above the pre-market range level, price formed a clear Head and Shoulders pattern.
+
+At approximately 19:41, price broke below the neckline and continued falling.
+
+And where did it go?
+
+Straight to that untested level from Friday, October 2!
+
+The level we had kept on our chart since the previous week.
+
+@img https://s3.tradingview.com/snapshots/c/cnXRJwrz.png
+
+### Friday, October 9
+
+Two BUY signals.
+
+Both offered almost 2R.
+
+Result: approximately +2R per trade.
+
+@img https://s3.tradingview.com/snapshots/m/MVGsgmJ5.png
+
+## The week in numbers
+
+Monday → −1R
+Tuesday → +1R
+Wednesday → +1.8R
+Thursday → +1R
+Friday → approximately +2R × 2
+
+6 signals | 5 profitable opportunities | 1 stop-loss
+
+Approximately +6.8R using the illustrated targets.
+
+This is a simplified chart-based calculation, not a record of executed trades.
+
+## What does this week show us?
+
+First, the indicator gives us signals with relatively short stop-losses.
+
+Even with a very simple approach — taking the signals, placing stops behind nearby local highs or lows, and looking for at least 1:1 risk/reward — we can achieve a positive result.
+
+We've been seeing positive results from this approach in our weekly reviews for several weeks now.
+
+Of course, we can also take partial profits, move stops to breakeven, or try to capture a larger move. That depends on our trading style.
+
+But there's another important advantage.
+
+The indicator doesn't just give us BUY and SELL signals. It also helps us see the market structure.
+
+Previous ranges, liquidity levels, and untested boundaries remain visible on our charts.
+
+Thursday was a perfect example.
+
+The indicator gave us one SELL signal, which delivered 1R. It did not generate another signal for the Head and Shoulders pattern.
+
+But we could see the structure forming around the pre-market range, the liquidity sweep above it, and the subsequent break and candle close below the lower range level.
+
+Now we had a reason to consider another short trade, a structural reference for our stop-loss, and a potential target — the untested level from October 2.
+
+And that's the important difference.
+
+We couldn't simply sell NASDAQ every day, hoping that price would eventually return to that old level.
+
+An untested level is not a trading signal or a guarantee.
+
+Without a proper setup, where would we put our stop-loss? How much drawdown would we have to survive?
+
+Instead, we keep those levels in mind and wait for the market to give us a reason to act.
+
+On Thursday, that reason was the Head and Shoulders breakdown.
+
+The indicator helped us identify the levels. Our trading experience helped us recognize the opportunity.
+
+## The weekly chart
+
+Look at the 5-minute chart.
+
+The untested October 2 level remained visible throughout the week, and Thursday's decline finally brought price back to it.
+
+I've noticed over several recent weeks that Mondays often bring strong directional moves, while Wednesday or Thursday sometimes brings corrections toward earlier levels.
+
+It's just an observation, not a rule or a reason to trade without confirmation.
+
+@img https://s3.tradingview.com/snapshots/o/OkgAX9Gr.png
+
+Very simple indicator. Very simple strategy.
+
+Please use it, enjoy it, and be profitable next week.

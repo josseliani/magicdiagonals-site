@@ -58,17 +58,6 @@ footer{border-top:1px solid #303a34;padding:26px 5%;display:flex;flex-wrap:wrap;
 footer div{display:flex;gap:18px;flex-wrap:wrap}
 """
 
-def head(title, desc, url, image):
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{html.escape(title)}</title><meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{url}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="article"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{image}"><meta name="twitter:card" content="summary_large_image">
-<style>{CSS}</style></head><body>
-<header><a class="brand" href="/">MAGIC<br>DIAGONALS</a><nav class="nav"><a href="/#products">Indicators</a><a href="/reviews/">Weekly reviews</a><a href="/risk-calculator/">Risk calculator</a></nav><a class="outline" href="/#access">See plans ↓</a></header>"""
-
-FOOT = """<footer><span>© Magic Diagonals · josseliani</span><div><a href="https://t.me/magicdiagonals">Telegram ↗︎</a><a href="https://www.instagram.com/magicdiagonals/">Instagram ↗︎</a><a href="https://www.youtube.com/@magicdiagonals" target="_blank" rel="noopener">YouTube ↗︎</a><a href="/">Main page</a></div></footer>
-<script defer src="/umami-site.js"></script></body></html>"""
-
 def inline(s):
     s = html.escape(s)
     return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
@@ -87,10 +76,10 @@ def render_body(body):
     day_open = False
     def flush():
         nonlocal para, items
-        if para: out.append('<p>' + inline(' '.join(para)) + '</p>'); para = []
+        if para: out.append('<p>' + inline(' '.join(para)).replace('\u2028 ', '<br>').replace('\u2028', '') + '</p>'); para = []
         if items: out.append('<ul>' + ''.join(f'<li>{inline(i)}</li>' for i in items) + '</ul>'); items = []
     def close_day():
-        nonlocal day_open
+        nonlocal day_open, day_img
         if day_open: out.append('</div>' + day_img + '</div></section>'); day_open = False
     day_img = ''
     for line in body.splitlines():
@@ -99,7 +88,7 @@ def render_body(body):
         if t.startswith('### '):
             flush(); close_day()
             title, _, img = t[4:].partition('|')
-            day_img = f'<figure><a href="img/{img.strip()}"><img loading="lazy" src="img/{img.strip()}" alt="{html.escape(title.strip())} — signal review card"></a></figure>' if img.strip() else ''
+            day_img = f'<figure><a href="/reviews/img/{img.strip()}"><img loading="lazy" src="/reviews/img/{img.strip()}" alt="{html.escape(title.strip())} — signal review card"></a></figure>' if img.strip() else ''
             out.append(f'<section class="day"><div class="day-grid"><div><h3>{inline(title.strip())}</h3>')
             day_open = True
         elif t.startswith('## '):
@@ -107,58 +96,102 @@ def render_body(body):
         elif t.startswith('- '):
             if para: flush()
             items.append(t[2:])
+        elif t.startswith('@img '):
+            flush()
+            src=t[5:].strip()
+            fig=f'<figure><a href="{src}" target="_blank" rel="noopener"><img loading="lazy" src="{src}" alt="Chart screenshot"></a></figure>'
+            if day_open and not day_img: day_img=fig
+            else: out.append(fig)
         elif t.startswith('> '):
             flush(); out.append(f'<p class="note">{inline(t[2:])}</p>')
         else:
             if items: flush()
-            para.append(t)
+            para.append(t + ('\u2028' if line.endswith('  ') else ''))
     flush(); close_day()
     return '\n'.join(out)
 
-def cta(tv):
-    return f"""<div class="cta"><p class="eyebrow">Free indicator</p><h2>NASDAQ Pre-Market Range Sweep</h2>
-<p>Range → Sweep → Return or Expansion → Structural confirmation → Target. The indicator from this review is free on TradingView.</p>
-<div class="cta-row"><a class="button" href="{TV_INDICATOR}" target="_blank" rel="noopener">Get the free indicator ↗</a><a class="outline" href="{tv}" target="_blank" rel="noopener">Discuss on TradingView ↗</a><a class="outline" href="https://t.me/magicdiagonals">Telegram ↗</a></div>
-<p class="note" style="margin-top:18px">Looking for more? Our Pro indicators RCC Pro and RSI Retest Pro: <a href="/#access" style="color:var(--accent)">see plans</a>.</p></div>"""
+L = {
+ 'en': dict(nav=('Indicators','Weekly reviews','Risk calculator'), plans='See plans ↓', home='/', crumb='Weekly NASDAQ reviews', edu='Education',
+   week='Week result', pub='Published', by='by josseliani', more='More weekly reviews', main='Main page', tg='https://t.me/magicdiagonals',
+   free='Free indicator', idea='Range → Sweep → Return or Expansion → Structural confirmation → Target. The indicator from this review is free on TradingView.',
+   get='Get the free indicator ↗', discuss='Discuss on TradingView ↗', pro='Looking for more? Our Pro indicators RCC Pro and RSI Retest Pro:', seeplans='see plans',
+   idx_title='Weekly NASDAQ Pre-Market Range Sweep reviews | Magic Diagonals', idx_desc='Every week we review how the free NASDAQ Pre-Market Range Sweep indicator performed: every signal, stop and target, counted honestly in R.',
+   idx_h1='NASDAQ Pre-Market Range Sweep: <em>weekly reviews</em>', idx_p='Every week we go through the real signals of the free NASDAQ Pre-Market Range Sweep indicator: which setups worked, which hit the stop, which ones we don\'t count and why. Results are given in R (risk units).',
+   alt='Weekly result chart', other=('Русская версия', '/reviews/ru/'), months=['January','February','March','April','May','June','July','August','September','October','November','December']),
+ 'ru': dict(nav=('Индикаторы','Обзоры недели','Калькулятор риска'), plans='Смотреть тарифы ↓', home='/ru', crumb='Еженедельные обзоры NASDAQ', edu='Обучение',
+   week='Итог недели', pub='Опубликовано', by='· josseliani', more='Другие обзоры', main='Главная', tg='https://t.me/indicatorlabJ',
+   free='Бесплатный индикатор', idea='Диапазон → Пробой (sweep) → Возврат или Расширение → Подтверждение структуры → Цель. Индикатор из этого обзора бесплатный, он доступен на TradingView.',
+   get='Получить бесплатный индикатор ↗', discuss='Обсудить на TradingView ↗', pro='Хотите больше? Наши Pro-индикаторы RCC Pro и RSI Retest Pro:', seeplans='смотреть тарифы',
+   idx_title='Еженедельные обзоры индикатора NASDAQ Pre-Market Range Sweep | Magic Diagonals', idx_desc='Каждую неделю разбираем, как сработал бесплатный индикатор NASDAQ Pre-Market Range Sweep: каждый сигнал, стоп и цель, честно в R.',
+   idx_h1='NASDAQ Pre-Market Range Sweep: <em>обзоры недели</em>', idx_p='Каждую неделю разбираем реальные сигналы бесплатного индикатора NASDAQ Pre-Market Range Sweep: какие сетапы сработали, какие ушли в стоп, какие мы не засчитываем и почему. Результаты в R (единицах риска).',
+   alt='Итоги недели', other=('English version', '/reviews/'), months=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']),
+}
+
+def head(lang, title, desc, url, image):
+    l = L[lang]
+    css = CSS + ('body{--accent:#a3c9ee}' if lang == 'ru' else '')
+    return f"""<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{html.escape(title)}</title><meta name="description" content="{html.escape(desc)}">
+<link rel="canonical" href="{url}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{image}"><meta name="twitter:card" content="summary_large_image">
+<style>{css}</style></head><body>
+<header><a class="brand" href="{l['home']}">MAGIC<br>DIAGONALS</a><nav class="nav"><a href="{l['home']}#products">{l['nav'][0]}</a><a href="{'/reviews/ru/' if lang=='ru' else '/reviews/'}">{l['nav'][1]}</a><a href="/risk-calculator/?lang={lang}">{l['nav'][2]}</a></nav><a class="outline" href="{l['home']}#access">{l['plans']}</a></header>"""
+
+def foot(lang):
+    l = L[lang]
+    return f"""<footer><span>© Magic Diagonals · josseliani</span><div><a href="{l['tg']}">Telegram ↗︎</a><a href="https://www.instagram.com/magicdiagonals/">Instagram ↗︎</a><a href="https://www.youtube.com/@magicdiagonals" target="_blank" rel="noopener">YouTube ↗︎</a><a href="{l['home']}">{l['main']}</a></div></footer>
+<script defer src="/umami-site.js"></script></body></html>"""
+
+def cta(lang, tv):
+    l = L[lang]
+    return f"""<div class="cta"><p class="eyebrow">{l['free']}</p><h2>NASDAQ Pre-Market Range Sweep</h2>
+<p>{l['idea']}</p>
+<div class="cta-row"><a class="button" href="{TV_INDICATOR}" target="_blank" rel="noopener">{l['get']}</a><a class="outline" href="{tv}" target="_blank" rel="noopener">{l['discuss']}</a><a class="outline" href="{l['tg']}">Telegram ↗</a></div>
+<p class="note" style="margin-top:18px">{l['pro']} <a href="{l['home']}#access" style="color:var(--accent)">{l['seeplans']}</a>.</p></div>"""
+
+def absu(src):
+    return src if src.startswith('http') else 'https://magicdiagonals.com/reviews/' + src
 
 def build():
-    OUT.mkdir(exist_ok=True)
-    reviews = []
-    for p in sorted(SRC.glob('*.txt')):
-        meta, body = parse(p)
-        reviews.append((meta, body))
-    reviews.sort(key=lambda r: r[0]['date'], reverse=True)
-    base = 'https://magicdiagonals.com/reviews/'
-    for i, (m, body) in enumerate(reviews):
-        url = base + m['slug'] + '.html'
-        img = base + m['cover']
-        d = datetime.date.fromisoformat(m['date']).strftime('%B %-d, %Y')
-        others = [r for r in reviews if r[0]['slug'] != m['slug']][:4]
-        more = ''.join(f'<a href="{o["slug"]}.html">{html.escape(o["dates"])} · <span class="result">{html.escape(o["result"])}</span> — {html.escape(o["title"])}</a>' for o, _ in others)
-        page = head(m['title'] + ' | Magic Diagonals', m['summary'], url, img) + f"""
-<main><p class="eyebrow"><a href="/reviews/">Weekly NASDAQ reviews</a> · Education</p>
+    allurls = []
+    for lang, src_dir, out_dir, base in [('en', SRC, OUT, 'https://magicdiagonals.com/reviews/'), ('ru', SRC / 'ru', OUT / 'ru', 'https://magicdiagonals.com/reviews/ru/')]:
+        l = L[lang]
+        out_dir.mkdir(parents=True, exist_ok=True)
+        reviews = [parse(p) for p in sorted(src_dir.glob('*.txt'))]
+        if not reviews: continue
+        reviews.sort(key=lambda r: r[0]['date'], reverse=True)
+        for m, body in reviews:
+            url = base + m['slug'] + '.html'
+            cover = m['cover'] if m['cover'].startswith('http') else '/reviews/' + m['cover']
+            dd = datetime.date.fromisoformat(m['date'])
+            d = f"{l['months'][dd.month-1]} {dd.day}, {dd.year}" if lang == 'en' else f"{dd.day} {l['months'][dd.month-1]} {dd.year}"
+            res = m.get('result', '')
+            others = [r for r in reviews if r[0]['slug'] != m['slug']][:4]
+            more = ''.join(f'<a href="{o["slug"]}.html">{html.escape(o["dates"])}' + (f' · <span class="result">{html.escape(o["result"])}</span>' if o.get('result') else '') + f' — {html.escape(o["title"])}</a>' for o, _ in others)
+            page = head(lang, m['title'] + ' | Magic Diagonals', m['summary'], url, absu(m['cover'])) + f"""
+<main><p class="eyebrow"><a href="./">{l['crumb']}</a> · {l['edu']}</p>
 <h1>{html.escape(m['title'])}</h1>
-<div class="meta"><span>{html.escape(m['dates'])}</span><span>Week result: <span class="result">{html.escape(m['result'])}</span></span><span>Published {d} by josseliani</span></div>
-<figure><img src="{m['cover']}" alt="Weekly result chart, {html.escape(m['dates'])}"></figure>
+<div class="meta"><span>{html.escape(m['dates'])}</span>""" + (f"""<span>{l['week']}: <span class="result">{html.escape(res)}</span></span>""" if res else '') + f"""<span>{l['pub']} {d} {l['by']}</span></div>
+<figure><img src="{cover}" alt="{l['alt']}, {html.escape(m['dates'])}"></figure>
 {render_body(body)}
-{cta(m['tv'])}
-{'<div class="more"><p class="eyebrow">More weekly reviews</p>' + more + '</div>' if more else ''}
-</main>""" + FOOT
-        (OUT / (m['slug'] + '.html')).write_text(page, encoding='utf-8')
-    cards = ''.join(f'<a class="card" href="{m["slug"]}.html"><img loading="lazy" src="{m["cover"]}" alt=""><div><h3>{html.escape(m["dates"])} · <span class="result">{html.escape(m["result"])}</span></h3><p>{html.escape(m["summary"])}</p></div></a>' for m, _ in reviews)
-    index = head('Weekly NASDAQ Pre-Market Range Sweep reviews | Magic Diagonals',
-                 'Every week we review how the free NASDAQ Pre-Market Range Sweep indicator performed: every signal, stop and target, counted honestly in R.',
-                 base, base + reviews[0][0]['cover'] if reviews else '') + f"""
-<main><p class="eyebrow">Education · Weekly reviews</p><h1>NASDAQ Pre-Market Range Sweep: <em>weekly reviews</em></h1>
-<p>Every week we go through the real signals of the free NASDAQ Pre-Market Range Sweep indicator: which setups worked, which hit the stop, which ones we don't count and why. Results are given in R (risk units).</p>
-{cards}{cta('https://www.tradingview.com/u/josseliani/')}</main>""" + FOOT
-    (OUT / 'index.html').write_text(index, encoding='utf-8')
-    # sitemap
-    urls = ['/', '/ru.html', '/de.html', '/es.html', '/ja.html', '/zh.html', '/risk-calculator/', '/reviews/'] + [f'/reviews/{m["slug"]}.html' for m, _ in reviews]
+{cta(lang, m['tv'])}
+{'<div class="more"><p class="eyebrow">' + l['more'] + '</p>' + more + '</div>' if more else ''}
+</main>""" + foot(lang)
+            (out_dir / (m['slug'] + '.html')).write_text(page, encoding='utf-8')
+            allurls.append(url)
+        cards = ''.join(f'<a class="card" href="{m["slug"]}.html"><img loading="lazy" src="{m["cover"] if m["cover"].startswith("http") else "/reviews/" + m["cover"]}" alt=""><div><h3>{html.escape(m["dates"])}' + (f' · <span class="result">{html.escape(m["result"])}</span>' if m.get('result') else '') + f'</h3><p>{html.escape(m["summary"])}</p></div></a>' for m, _ in reviews)
+        other = f'<p class="note"><a href="{l["other"][1]}" style="color:var(--accent)">{l["other"][0]} →</a></p>' if (SRC / ('ru' if lang == 'en' else '.')).exists() else ''
+        index = head(lang, l['idx_title'], l['idx_desc'], base, absu(reviews[0][0]['cover'])) + f"""
+<main><p class="eyebrow">{l['edu']} · {l['nav'][1]}</p><h1>{l['idx_h1']}</h1>
+<p>{l['idx_p']}</p>{other}
+{cards}{cta(lang, 'https://www.tradingview.com/u/josseliani/')}</main>""" + foot(lang)
+        (out_dir / 'index.html').write_text(index, encoding='utf-8')
+        allurls.append(base)
+    urls = ['https://magicdiagonals.com' + u for u in ['/', '/ru.html', '/de.html', '/es.html', '/ja.html', '/zh.html', '/risk-calculator/']] + allurls
     today = datetime.date.today().isoformat()
-    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>https://magicdiagonals.com{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls) + '</urlset>\n'
+    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls) + '</urlset>\n'
     (ROOT / 'sitemap.xml').write_text(sm, encoding='utf-8')
-    print('built', len(reviews), 'reviews')
+    print('built', len(allurls), 'pages')
 
 if __name__ == '__main__':
     build()

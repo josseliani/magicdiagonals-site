@@ -1,0 +1,141 @@
+title: NASDAQ Pre-Market Range Sweep — Weekly Review, October 12–16, 2026
+slug: nasdaq-2026-10-12-16
+dates: October 12–16, 2026
+date: 2026-10-18
+tv: https://www.tradingview.com/chart/NAS100USD/dnJP3Yfx-NASDAQ-Pre-Market-Range-Sweep-Expansion-Signals-October-12-16/
+cover: https://s3.tradingview.com/d/dnJP3Yfx_big.png
+summary: Another week of reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on the 1-minute chart.
+---
+Another week of reviewing how our NASDAQ Pre-Market Range Sweep indicator performed on the 1-minute chart.
+
+This week, we added something new — Expansion BUY and SELL signals.
+
+Our original signals look for a move back into the pre-market range after a sweep. But price doesn't always return to the midpoint or the opposite boundary.
+
+Sometimes, it continues moving away from the range.
+
+The new signals help us follow that scenario:
+
+Range breakout → Pullback and boundary retest → Break of the setup high or low → Expansion signal.
+
+The target calculation uses the range width and the entry’s distance from the broken boundary.
+
+Let's see how both types of signals worked this week.
+
+### Monday, October 12
+
+The first signal was our new Expansion SELL at approximately 30,734.
+
+Its target projected an equal distance beyond the broken lower boundary. Price eventually reached it, although this happened later, during the night.
+
+We count +1R for this setup.
+
+While that move was developing, the original BUY signal offered a trade in the opposite direction — a rebound toward the range.
+
+That BUY delivered 1R and slightly more, but price never reached the lower range boundary.
+
+This is exactly why we shouldn't assume that every rebound will bring price back into the range.
+
+A continuation move can include pullbacks. Both setups can appear on the same day.
+
+Result: +2R — two setups, +1R each.
+
+@img https://s3.tradingview.com/snapshots/d/dLZEKsBj.png
+
+### Tuesday, October 13
+
+One original BUY signal after a sweep below the range.
+
+Price reversed higher, giving us the opportunity to take 1R.
+
+Result: +1R.
+
+@img https://s3.tradingview.com/snapshots/0/0Tobm6zf.png
+
+### Wednesday, October 14
+
+Price broke below the range, but the original BUY signal did not appear.
+
+It then moved back inside the range before reversing and breaking below the sweep low.
+
+This gave us an Expansion SELL.
+
+Entry → approximately 30,320.
+Target → approximately 30,047.
+Distance → 273 index points.
+
+The target was reached by approximately 19:23, chart time.
+
+This is a considerably larger price move than some of our short rebound setups.
+
+The original signals can offer very short stops. However, spreads or broker restrictions can sometimes make those small setups difficult to trade.
+
+Expansion gives us another type of opportunity to evaluate, with its own stop and position size.
+
+Result: +1R in this review.
+
+@img https://s3.tradingview.com/snapshots/d/Dx4WYjOh.png
+
+### Thursday, October 15
+
+First, the original BUY signal gave us a move back into the range and 1R.
+
+Later, price broke above the upper boundary. The subsequent retest and continuation triggered an Expansion BUY.
+
+That setup also reached its target.
+
+Result: +2R — two setups, +1R each.
+
+@img https://s3.tradingview.com/snapshots/w/wvhOIAef.png
+
+### Friday, October 16
+
+The Expansion SELL reached its target, giving us 1R.
+
+Price continued considerably lower, but we count only the illustrated target.
+
+Later, an original BUY signal offered a rebound. It did not deliver a full 1R.
+
+For this simplified review, we conservatively count that BUY as −1R.
+
+Result: 0R — +1R on Expansion SELL and −1R allocated to the BUY.
+
+@img https://s3.tradingview.com/snapshots/b/BfITmBuw.png
+
+## The week in numbers
+
+Monday → +2R
+Tuesday → +1R
+Wednesday → +1R
+Thursday → +2R
+Friday → 0R
+
+8 signals | 4 original signals | 4 Expansion signals
+
+7 profitable opportunities | 1 setup counted as a loss
+
+Total: +6R using the accounting described above.
+
+This is a simplified chart-based calculation, not a record of executed trades. 
+
+## What does this week show us?
+
+A sweep doesn't guarantee a full return into the range.
+
+Monday showed this clearly. The BUY offered a profitable rebound, while the broader move continued lower.
+
+The two signal types help us follow two different scenarios:
+
+Original BUY and SELL → a move back toward or into the range.
+
+Expansion BUY and SELL → continuation beyond the range after a retest and a break of the setup extreme.
+
+The original signals can give us a short stop behind a nearby local high or low. Expansion helps us follow a move that continues beyond the range, rather than waiting indefinitely for price to return.
+
+We still need to define our stop, calculate our position size and decide where to take profit. An Expansion target is a reference, not a promise.
+
+The range gives us the reference levels. The setup gives us a reason to act.
+
+Very simple indicator. Two clear scenarios.
+
+Please use it, enjoy your trading, and be profitable next week.

@@ -1,0 +1,339 @@
+title: NASDAQ Pre-Market Range Sweep — Weekly Review, September 14–18, 2026
+slug: nasdaq-2026-09-14-18
+dates: September 14–18, 2026
+date: 2026-09-20
+tv: https://www.tradingview.com/chart/NAS100USD/ChZzVk1H-NASDAQ-Pre-Market-Range-Sweep-Indicator-Weekly-Review-Sep-14-18/
+cover: https://s3.tradingview.com/c/ChZzVk1H_big.png
+summary: How the NASDAQ Pre-Market Range Sweep indicator performed this week
+---
+How the NASDAQ Pre-Market Range Sweep indicator performed this week
+
+This week, I want to look at how the NASDAQ Pre-Market Range Sweep indicator worked in real market conditions — what signals it gave, how I used them, which trades worked, which ones didn’t, and what we can learn from each setup.
+
+The point of this weekly review is not to show only perfect trades. I want to use the actual signals from the indicator to explain how I work with risk-to-reward, targets, signal timing, the statistics table, trade management, and the range levels themselves.
+
+The indicator builds the pre-market range from 8:00 a.m. to 9:00 a.m. New York time and then looks for qualified sweeps and returns back into the range.
+
+The signal itself is only the beginning.
+
+We still need to look at the available risk-to-reward, the distance to the next logical target, the statistics, the time since the range was formed, and what price is actually doing around the range.
+
+Let’s go through the week day by day.
+
+Monday — September 14
+
+Monday gave us a beautiful example of how I use the indicator when the first target is only the beginning of the move.
+
+After the sweep below the pre-market range, the indicator gave us a BUY signal.
+
+Entry → 28844
+Stop Loss → 28804
+First target → 28879
+Next major range level → 29185
+
+The first target gave approximately 0.88R.
+
+At this point, one way to manage the trade is to take partial profit, protect the remaining position at breakeven, and let the market show us whether it wants to continue.
+
+And this is important.
+
+I am not going to put the target at the very top of the move afterwards and pretend that we knew exactly where price was going to stop.
+
+We didn’t.
+
+A lot of traders were waiting for the gap to be completely filled. But the gap was not completely filled.
+
+For me, there was already a logical level on the chart — the upper boundary of the previous day’s range at 29185.
+
+Price reached that level.
+
+From the original entry, that move was approximately 8.5R.
+
+What can we learn from this setup?
+
+The first indicator target can be used to take partial profit and protect the trade. If price continues, I prefer to work with the next logical levels already visible on the chart rather than inventing a perfect target afterwards.
+
+If we are trading a system, we should understand the levels that system gives us and use them consistently.
+
+It doesn’t matter what happened afterwards.
+
+We trade the levels we can actually see at the time.
+
+@img https://s3.tradingview.com/snapshots/p/P5JtsEGV.png
+
+Tuesday — September 15
+
+Tuesday was very different, and that makes it just as useful for understanding the indicator.
+
+The first BUY reached the indicator target, but the risk-to-reward was not particularly attractive.
+
+Entry → 29112
+Stop Loss → 29065
+
+The pre-market range was narrow, and the available distance to the target was less than 1R.
+
+What can we learn from this setup?
+
+A signal does not automatically mean that I have to enter a trade.
+
+Before entering, I look at the distance between the entry, the stop and the available target.
+
+If the indicator gives me a valid setup but the available reward is too small compared with the risk, I can simply skip it.
+
+If I have additional confirmation from the market — for example, from volume — and still decide to enter, I can manage the trade toward 1:1 instead.
+
+The indicator target was reached here, but that does not automatically make it a good trade for me.
+
+There was also another BUY signal later:
+
+Entry → 28987
+Stop Loss → 28924
+Target → 29091
+
+The full move to the target was approximately 1.65R.
+
+But there is an important detail.
+
+For this weekly review, I extended the Signal Window to 360 minutes so we can see what happened later in the session.
+
+In actual trading, I normally use 120 minutes.
+
+Why?
+
+Look at the statistics table.
+
+The current average time to reach the opposite boundary of the range is approximately 110 minutes.
+
+That statistic is useful.
+
+If the moves that successfully reach the opposite side take around 110 minutes on average, I don’t see much reason to sit in front of the chart all day waiting for another signal.
+
+With a 360-minute window, we can see this second BUY and study what happened.
+
+With my normal 120-minute setting, I would not have taken it.
+
+And the target itself was reached only later, on the following day.
+
+This is exactly why the statistics table is there.
+
+It is not just something to display in the corner of the chart. I use it to decide how I configure and trade the indicator.
+
+@img https://s3.tradingview.com/snapshots/p/pkdq3MpG.png
+
+Wednesday — September 16
+
+Wednesday was much more interesting.
+
+There were several opportunities around the range.
+
+The first SELL was stopped out.
+
+Entry → 29163
+Stop Loss → 29217
+Result → -1R
+
+Nothing to hide here.
+
+It was a valid setup, the stop was tight, and price took it.
+
+A stop loss is part of the system.
+
+Then we had another SELL:
+
+Entry → 29228
+Stop Loss → 29295
+Target → 29098
+
+This one worked beautifully.
+
+Price returned through the range and reached the opposite side.
+
+The move from the entry to the target was approximately 1.94R.
+
+This is also a good example of why the position of the stop matters.
+
+Even with the expected FOMC volatility, the high above this setup was not taken before price moved down.
+
+Later, during the FOMC move, there was another beautiful opportunity when price started returning into the range.
+
+If you decide to trade FOMC volatility, this was another setup that could be managed using the same range logic.
+
+Personally, I don’t like trading FOMC, so I am not adding this opportunity to my normal trading result.
+
+But for an educational review, it is absolutely worth looking at.
+
+And now look at where the FOMC move eventually went.
+
+It came back to the old Monday range.
+
+Price broke through the upper boundary of Monday’s range, moved through it, reached the lower boundary of that same range — and that is where the move stopped and reversed.
+
+This is why I keep old range levels on the chart.
+
+A range does not necessarily become useless when the trading day ends.
+
+Monday’s range was still giving us meaningful reference levels two days later, during one of the most volatile events of the week.
+
+These levels are there for a reason.
+
+@img https://s3.tradingview.com/snapshots/h/H8yvYI4H.png
+
+Thursday — September 17
+
+Thursday gave us a completely fair stop loss.
+
+Entry → 29491
+Stop Loss → 29508
+Result → -1R
+
+Again, it was a very short stop, but price took it.
+
+After that, the indicator did not give us another signal.
+
+Later, price moved back into the range and there was a beautiful opportunity that was quite easy to see with our own eyes.
+
+But the indicator did not give that signal.
+
+So I am not going to count it as an indicator trade.
+
+What can we learn from Thursday?
+
+The indicator follows strict conditions.
+
+It is not designed to put a BUY or SELL label on every move that looks good afterwards.
+
+And I don’t want it to.
+
+The indicator gives the setup.
+The chart gives the context.
+And we still have our eyes.
+
+Sometimes we will see an opportunity that the strict indicator logic does not give us.
+
+That is completely normal.
+
+@img https://s3.tradingview.com/snapshots/q/QbuXeDFK.png
+
+Friday — September 18
+
+Friday finished the week with two good BUY signals.
+
+The first BUY:
+
+Entry → 29537
+Stop Loss → 29500
+Target → 29588
+
+The move to the indicator target was approximately 1.38R.
+
+This is the type of setup where I still look at the available risk-to-reward before entering.
+
+If market conditions support the setup, I want at least around 1:1 rather than taking a trade simply because a BUY label appeared.
+
+This one gave us more than 1R.
+
+Then came the second BUY:
+
+Entry → 29467
+Stop Loss → 29407
+Opposite range boundary → 29596
+
+This is a very good example of how I like to manage a successful return into the range.
+
+Price returned inside, reached the first partial target and then continued toward the opposite side.
+
+At the first target, we could take partial profit and move the remaining position to breakeven.
+
+Breakeven was never touched.
+
+The remaining position could stay open all the way to the opposite boundary.
+
+From entry to that level, the full move was approximately 2.15R.
+
+What can we learn from this setup?
+
+The first target does not necessarily have to end the trade.
+
+First target → consider taking partial profit.
+
+Then → protect the remaining position.
+
+After that → give the trade an opportunity to reach the next logical range level.
+
+We never know beforehand whether the market will give us 1R, 2R or much more.
+
+That is why trade management is just as important as the signal itself.
+
+@img https://s3.tradingview.com/snapshots/m/MZyjrp8b.png
+
+So how did the indicator perform this week?
+
+With my normal trading approach and the 120-minute signal window, there were seven main indicator setups to evaluate during the week.
+
+Four produced moves of at least 1R or more:
+
+→ Monday — approximately 8.5R to the next major range level
+→ Wednesday — approximately 1.94R
+→ Friday first BUY — approximately 1.38R
+→ Friday second BUY — approximately 2.15R
+
+Tuesday’s first setup reached the indicator target, but the available reward was below 1R.
+
+Two setups were stopped out:
+
+→ Wednesday
+→ Thursday
+
+Tuesday also produced another profitable BUY when I extended the Signal Window to 360 minutes, but I do not include that in my normal trading result because my actual setting is 120 minutes.
+
+Wednesday also gave another beautiful opportunity during FOMC, but I personally prefer not to trade FOMC, so I am not adding that one to the normal result either.
+
+And this is exactly why I like reviewing the entire week instead of choosing only the best screenshots.
+
+We can see what worked.
+We can see what didn’t.
+And, more importantly, we can understand why.
+
+How I use the NASDAQ Pre-Market Range Sweep indicator
+
+1. I let the pre-market range form from 8:00 a.m. to 9:00 a.m. New York time.
+
+2. I wait for a qualified sweep and a valid return setup.
+
+3. Before entering, I compare the stop with the available target. A valid signal with poor risk-to-reward can still be a trade I skip.
+
+4. I use the statistics table. My normal Signal Window is 120 minutes, and the current average time to reach the opposite range boundary is around 110 minutes.
+
+5. At the first logical target, I can take partial profit and protect the remaining position.
+
+6. If price continues, I look at the next logical range level rather than inventing a perfect target afterwards.
+
+7. I keep previous range levels on the chart because, as Wednesday showed us, an old range can still become important several days later.
+
+8. And I still use my eyes. The indicator gives me a repeatable structure, but it does not replace the trader.
+
+Final thoughts
+
+Monday showed us how a small first target can develop into a much larger move when we manage the remaining position.
+
+Tuesday showed us why a valid signal is not enough if the risk-to-reward is poor — and why the statistics table can help us choose a sensible trading window.
+
+Wednesday showed us both sides of trading: a stop loss, a beautiful full range return, another opportunity during FOMC, and an old Monday range that was still relevant two days later.
+
+Thursday reminded us that not every good-looking move will produce an indicator signal.
+
+And Friday gave us two clean examples of managing BUY setups back into the range.
+
+That is the purpose of these weekly reviews.
+
+Not to find perfect trades afterwards, but to understand how the indicator behaves in different market conditions and how we can use the information it gives us.
+
+The indicator gives the structure.
+The statistics give the context.
+But the trader still has to decide where the stop makes sense, where to take partial profit, and when the trade is no longer worth holding.
+
+Curious which level will become important for price on Monday? 🙂
+
+Very simple indicator. Very simple strategy.
+
+Please use it, enjoy it, and be profitable next week.
