@@ -17,6 +17,25 @@
     io.observe(pricing);
   }
 
+
+  // ---- YouTube block: play inside the page (views count on YouTube) + click tracking ----
+  const playYt = (box) => {
+    if (box.querySelector('iframe')) return;
+    const id = box.dataset.yt;
+    const f = document.createElement('iframe');
+    f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen = true; f.title = box.getAttribute('aria-label') || 'YouTube video';
+    box.append(f); track('youtube_video_play', { video: id });
+  };
+  document.querySelectorAll('[data-yt]').forEach((box) => {
+    box.addEventListener('click', () => playYt(box));
+    box.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playYt(box); } });
+  });
+  document.addEventListener('click', (e) => {
+    const el = e.target instanceof Element ? e.target.closest('[data-track]') : null;
+    if (el) track(el.dataset.track);
+  }, { passive: true });
   // ---- Telegram invitation before leaving for TradingView (once per visit) ----
   const T = {
     en: ['Before you go to TradingView', 'Join our Telegram channel: new indicators, weekly NASDAQ reviews and updates come there first.', 'Join Telegram', 'Continue to TradingView'],
