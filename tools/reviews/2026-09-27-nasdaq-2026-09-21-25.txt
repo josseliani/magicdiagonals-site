@@ -20,8 +20,7 @@ On the 5-minute and 15-minute charts, the indicator shows only BUY and SELL sign
 
 The targets are there mainly to give you immediate visual context. If price is still relatively close to the New York pre-market range, the midpoint and then the opposite boundary can be logical targets. If price has already moved away from the range by more than the size of the range itself, I become more conservative and look first for a return to the nearest boundary.
 
-MONDAY — September 21
-
+### Monday, September 21
 The BUY signal came around 30003, already inside the New York pre-market range.
 
 At that point, there wasn’t enough distance left to the upper boundary for 1:1.
@@ -38,8 +37,7 @@ A signal is not enough by itself. Look at the available space, R:R, and any addi
 
 @img https://s3.tradingview.com/snapshots/a/aWHs8fKX.png
 
-TUESDAY — September 22
-
+### Tuesday, September 22
 Tuesday gave us a SELL signal around 30680.
 
 Stop Loss: 30733
@@ -52,8 +50,7 @@ Almost reaching the target is still not reaching the target. Tuesday is an hones
 
 @img https://s3.tradingview.com/snapshots/o/OGNVIK6L.png
 
-WEDNESDAY — September 23
-
+### Wednesday, September 23
 Wednesday gave us a much better situation.
 
 SELL Entry: 30685
@@ -73,8 +70,7 @@ This is exactly why I like to keep previous ranges on the chart. A range doesn�
 
 @img https://s3.tradingview.com/snapshots/w/W8lKBOvj.png
 
-THURSDAY — September 24
-
+### Thursday, September 24
 Thursday gave us two SELL signals.
 
 The first trade ended with a Stop Loss.
@@ -91,8 +87,7 @@ First trade: −1R. Second trade: +1R.
 
 @img https://s3.tradingview.com/snapshots/x/xeMwR3yv.png
 
-FRIDAY — September 25
-
+### Friday, September 25
 Friday is a very good example to look at more closely.
 
 The first BUY came around 30630.

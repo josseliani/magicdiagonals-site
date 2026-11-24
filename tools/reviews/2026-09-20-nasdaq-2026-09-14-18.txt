@@ -20,8 +20,7 @@ We still need to look at the available risk-to-reward, the distance to the next 
 
 Let’s go through the week day by day.
 
-Monday — September 14
-
+### Monday, September 14
 Monday gave us a beautiful example of how I use the indicator when the first target is only the beginning of the move.
 
 After the sweep below the pre-market range, the indicator gave us a BUY signal.
@@ -61,8 +60,7 @@ We trade the levels we can actually see at the time.
 
 @img https://s3.tradingview.com/snapshots/p/P5JtsEGV.png
 
-Tuesday — September 15
-
+### Tuesday, September 15
 Tuesday was very different, and that makes it just as useful for understanding the indicator.
 
 The first BUY reached the indicator target, but the risk-to-reward was not particularly attractive.
@@ -120,8 +118,7 @@ It is not just something to display in the corner of the chart. I use it to deci
 
 @img https://s3.tradingview.com/snapshots/p/pkdq3MpG.png
 
-Wednesday — September 16
-
+### Wednesday, September 16
 Wednesday was much more interesting.
 
 There were several opportunities around the range.
@@ -178,8 +175,7 @@ These levels are there for a reason.
 
 @img https://s3.tradingview.com/snapshots/h/H8yvYI4H.png
 
-Thursday — September 17
-
+### Thursday, September 17
 Thursday gave us a completely fair stop loss.
 
 Entry → 29491
@@ -214,8 +210,7 @@ That is completely normal.
 
 @img https://s3.tradingview.com/snapshots/q/QbuXeDFK.png
 
-Friday — September 18
-
+### Friday, September 18
 Friday finished the week with two good BUY signals.
 
 The first BUY:
