@@ -48,4 +48,3 @@ html[lang="ru"] #access .prices .price>a.russian-payment-link:hover{background:r
 
 .nav .nav-docs{color:#d9bc78!important;font-weight:bold}
 html[lang="ru"] .nav .nav-docs{color:#a3c9ee!important}
-@media(max-width:760px){header .nav{display:flex!important;gap:0}header .nav a:not(.nav-docs){display:none}header .nav .nav-docs{font-size:13px;padding:6px 10px;border:1px solid currentColor;border-radius:999px}}
