@@ -42,3 +42,6 @@ html[lang="ru"] #access .prices .price>a.russian-payment-link:hover{background:r
 .price-alt p{color:#c9d2cc;font-size:15px}
 .plan-grid.plan-grid-space{grid-template-columns:minmax(0,460px)!important;justify-content:center}
 .plan-desc{color:#c9d2cc;font-size:15px;line-height:1.55;margin:10px 0 18px}
+
+.price-year{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding:12px 14px;border:1px dashed #56625a;border-radius:10px;font-size:14px;color:#d6ddd8;text-decoration:none}
+.price-year:hover{border-color:#9fc2e3}.price-year span{color:#a5afa9;font-size:13px}.price-year b{color:#f0f0e9;font-size:15px}.price-year small{color:#8f9a93;font-size:12px}

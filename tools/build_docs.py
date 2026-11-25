@@ -17,6 +17,11 @@ EXTRA_CSS = """
 .guide h3{color:#f0f0e9;margin:0 0 6px;font-size:18px}.guide p{font-size:14.5px;color:#a5afa9;margin:0 0 12px}
 .guide .button,.guide .outline{padding:9px 15px;font-size:13.5px}
 .soon{font-size:13px;color:#a5afa9}
+.yt-player{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid #2f3b35;background:#000;cursor:pointer;margin:14px 0}
+.yt-player img{width:100%;height:100%;object-fit:cover;display:block}.yt-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:52px;border-radius:14px;background:#ff0033;pointer-events:none}
+.yt-play:after{content:"";position:absolute;left:30px;top:14px;border-left:19px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.yt-dur{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.8);color:#fff;font-size:13px;padding:2px 7px;border-radius:5px}
 """
 
 T = {
@@ -58,6 +63,14 @@ T = {
    other=('English version →','/docs/')),
 }
 
+VID = '13NBN0E3_uE'
+def video_block(lang, t):
+    if lang == 'ru':
+        return (f'<h2>Видеоинструкция RSI Retest Scalper Pro</h2><p>Главная инструкция по RSI Retest Pro — 17 минут: 9 пресетов, Smart и Fast Entry, как читать статистику 1R–5R.</p>'
+                f'<div class="yt-player" data-yt="{VID}" role="button" tabindex="0" aria-label="Смотреть видеоинструкцию RSI Retest Scalper Pro"><img src="https://i.ytimg.com/vi/{VID}/maxresdefault.jpg" alt="RSI Retest Scalper Pro — полная инструкция" loading="lazy"><span class="yt-play"></span><span class="yt-dur">17:00</span></div>'
+                f'<p><a class="outline" data-track="youtube_subscribe_click" href="https://www.youtube.com/@indicatorlabjosseliani?sub_confirmation=1" target="_blank" rel="noopener">Подписаться на YouTube-канал ↗</a></p>')
+    return f"<h2>{t['h_video']}</h2><p>{t['video']} <a href=\"{t['yt'][1]}\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">{t['yt'][0]}</a></p>"
+
 def page(lang):
     t = T[lang]
     url = 'https://magicdiagonals.com' + ('/docs/ru/' if lang == 'ru' else '/docs/')
@@ -69,7 +82,7 @@ def page(lang):
 <p class="note"><a href="{t['other'][1]}" style="color:var(--accent)">{t['other'][0]}</a></p>
 <h2>{t['h_start']}</h2><ol class="steps">{steps}</ol>
 <h2>{t['h_guides']}</h2><div class="guides">{guides}</div><p class="soon">{t['soon']}</p>
-<h2>{t['h_video']}</h2><p>{t['video']} <a href="{t['yt'][1]}" target="_blank" rel="noopener" style="color:var(--accent)">{t['yt'][0]}</a></p>
+{video_block(lang, t)}
 <h2>{t['h_help']}</h2><p>{t['help']}</p><p><a class="outline" href="{t['tg'][1]}">{t['tg'][0]}</a></p>
 <div class="cta"><p class="eyebrow">{t['notsub']}</p><a class="button" data-track="space_subscribe_click" href="{SPACE}" target="_blank" rel="noopener">{t['sub']}</a></div>
 <p class="note">{t['note']}</p></main>""" + br.foot(lang)
