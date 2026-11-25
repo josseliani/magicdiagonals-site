@@ -29,3 +29,16 @@ html[lang="ru"] #access .prices .price>a.russian-payment-link:hover{background:r
 @keyframes md-review-drift{to{transform:translateX(-50%)}}
 @media(max-width:700px){.md-reviews{padding:42px 0 47px}.md-reviews-head{padding:0 5%}.md-review-card{width:285px;min-height:245px;padding:20px}.md-review-viewport{mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}.md-risk-button{margin:12px 0 0;display:flex;width:fit-content}}
 @media(prefers-reduced-motion:reduce){.md-review-marquee{animation:none}.md-review-viewport{overflow-x:auto;mask-image:none}.md-review-group[aria-hidden="true"]{display:none}}
+
+/* Trading Lab (Paid Space) pricing */
+.prices.prices-space{grid-template-columns:repeat(auto-fit,minmax(280px,420px));justify-content:center;text-align:left}
+.price-main{border-color:#7fa8cb!important;box-shadow:0 0 0 1px rgba(127,168,203,.25),0 18px 50px rgba(0,0,0,.35)}
+.price-tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9fc2e3;margin:0 0 10px}
+.price-main h3,.price-alt h3{margin:0 0 10px}
+.price-main strong{display:block;font-size:46px;line-height:1.1;margin:4px 0 8px}.price-main strong span{font-size:17px;font-weight:400;color:#b9c4bd}
+.price-list{list-style:none;padding:0;margin:14px 0 20px;color:#d6ddd8;font-size:15px}.price-list li{padding:5px 0 5px 24px;position:relative}.price-list li:before{content:"✓";position:absolute;left:0;color:#9fc2e3;font-weight:bold}
+.price-sub-link{display:block;margin-top:14px;font-size:14px;color:#9fc2e3}
+.ru-plans{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.price-alt p{color:#c9d2cc;font-size:15px}
+.plan-grid.plan-grid-space{grid-template-columns:minmax(0,460px)!important;justify-content:center}
+.plan-desc{color:#c9d2cc;font-size:15px;line-height:1.55;margin:10px 0 18px}

@@ -12,7 +12,6 @@
   const accessText={zh:'获取访问权限 ↓',de:'Zugang erhalten ↓',es:'Obtener acceso ↓',ja:'アクセスを取得 ↓'}[lang];
   const checkoutUrls=['https://whop.com/checkout/plan_AEwK72eCJAQSE/','https://whop.com/checkout/plan_gdVZiiKHdRhiw/','https://whop.com/checkout/plan_r3r3Ka97S9LvQ/'];
   const checkoutLabel={zh:'前往结账 ↗',de:'Zur Kasse ↗',es:'Ir al pago ↗',ja:'お支払いへ ↗'}[lang];
-  document.querySelectorAll('.compact #pricing .plan-grid .plan a.button').forEach((a,i)=>{if(checkoutUrls[i]){a.href=checkoutUrls[i];a.textContent=checkoutLabel}});
   const hero=document.querySelector('.compact .hero');
   if(hero){
     const h1=hero.querySelector('h1');

@@ -87,6 +87,7 @@
     let url; try { url = new URL(a.href, location.href); } catch { return; }
     const host = url.hostname.toLowerCase();
     if (!(host === 'tradingview.com' || host.endsWith('.tradingview.com'))) return;
+    if (url.pathname.includes('/marketplace/')) return;
     if (wasShown() || typeof HTMLDialogElement !== 'function') return;
     e.preventDefault();
     markShown();
