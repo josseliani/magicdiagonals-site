@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>МАКЕТ · RSI Retest Scalper Pro — стратегия | Magic Diagonals</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0c1110;color:#f0f0e9;font:17px/1.65 Arial,sans-serif;--a:#a3c9ee;--g:#d9bc78;--m:#a5afa9;--line:#2c3430}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.mock{background:#d9bc78;color:#0c1110;text-align:center;font-size:13px;font-weight:bold;padding:7px 12px}
+.strip{display:block;background:var(--a);color:#0c1110;text-align:center;font-size:14px;font-weight:bold;padding:9px 14px}
+header{height:70px;border-bottom:1px solid #303a34;display:flex;align-items:center;justify-content:space-between;padding:0 5%;gap:14px;position:sticky;top:0;background:rgba(12,17,16,.94);backdrop-filter:blur(6px);z-index:5}
+.brand{font-size:12px;letter-spacing:3px;font-weight:bold;line-height:1.4}
+.menu{display:flex;gap:22px;font-size:14px;color:#d6dbd7;align-items:center}.menu .dd{color:var(--a)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;font-weight:bold;font-size:15px;background:var(--a);color:#0c1110;white-space:nowrap}
+.btn.o{background:transparent;color:#f0f0e9;border:1px solid #56625a;font-weight:normal}
+.burger{display:none;font-size:24px}
+@media(max-width:820px){.menu{display:none}.burger{display:block}header .btn{display:none}}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.eyebrow{color:var(--a);letter-spacing:2.3px;text-transform:uppercase;font-size:11px;margin:0 0 14px}
+h1{font-weight:400;font-size:clamp(32px,5vw,54px);letter-spacing:-1.3px;line-height:1.08;margin:0 0 16px}
+h1 em,h2 em{font-family:Georgia,serif;color:var(--a)}
+h2{font-weight:400;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.8px;line-height:1.15;margin:0 0 14px}
+p{color:#d4dad6;margin:0 0 14px}.muted{color:var(--m);font-size:15px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:42px;align-items:center;padding:56px 0}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0}.tabs a{font-size:13px;padding:7px 13px;border:1px solid #3a463f;border-radius:999px;color:#cfd6d1}.tabs a.on{border-color:var(--a);color:var(--a)}
+.yt{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid #2f3b35;background:#000}
+.yt img{width:100%;height:100%;object-fit:cover}.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:54px;border-radius:14px;background:#ff0033}
+.play:after{content:"";position:absolute;left:31px;top:15px;border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{border:1px solid #2f3b35;border-radius:16px;background:#121816;padding:18px}
+.step .ico{font-size:26px;margin-bottom:8px}.step h3{margin:0 0 6px;font-size:17px}.step p{font-size:14.5px;margin:0;color:var(--m)}
+.shot{border:2px dashed #4b5a52;border-radius:14px;background:#10161a;color:#9fb3c4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:14px;min-height:240px}
+.shot b{color:var(--a);font-size:15px;margin-bottom:6px}
+.real{border-radius:14px;border:1px solid #2c3430;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;margin-top:34px}
+.row.rev>div:first-child{order:2}
+@media(max-width:860px){.row{grid-template-columns:1fr}.row.rev>div:first-child{order:0}}
+.num{display:inline-flex;width:34px;height:34px;border-radius:50%;border:1px solid var(--a);color:var(--a);align-items:center;justify-content:center;font-weight:bold;margin-bottom:10px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid #2f3b35;border-radius:16px;background:#121816;overflow:hidden}.card .shot{border:0;border-radius:0;min-height:200px}
+.card div.t{padding:14px 16px}.card h3{margin:0 0 4px;font-size:16px}.card p{font-size:14px;margin:0;color:var(--m)}
+.tag{display:inline-block;font-size:12px;color:#0c1110;background:var(--a);border-radius:6px;padding:2px 8px;margin-right:6px;font-weight:bold}
+.vs{width:100%;border-collapse:collapse;margin-top:20px;font-size:15px}.vs th,.vs td{border-bottom:1px solid var(--line);padding:11px 8px;text-align:left}.vs th{color:var(--m);font-weight:normal}.vs td:last-child{color:var(--a)}
+.price{max-width:460px;margin:26px auto 0;border:1px solid var(--a);border-radius:18px;background:#121816;padding:26px;text-align:left}
+.price strong{font-size:44px}.price strong span{font-size:17px;color:var(--m);font-weight:normal}
+.quote{border-left:3px solid var(--a);padding:6px 0 6px 16px;margin:16px 0;color:#dfe4e0}
+.note{background:#151d19;border:1px solid #2f3b35;border-radius:12px;padding:14px 16px;font-size:14px;color:#c6cfc9;margin-top:18px}
+footer{padding:28px 5%;color:var(--m);font-size:13px}
+</style></head><body>
+<div class="mock">МАКЕТ для согласования · пунктирные рамки — места для ваших скриншотов · страница скрыта от посетителей</div>
+<a class="strip" href="#">🎬 Новое видео: полная инструкция RSI Retest Pro, 17 минут →</a>
+<header><a class="brand" href="/ru">INDICATOR<br>LABS</a>
+<nav class="menu"><a class="dd" href="#">Индикаторы ▾</a><a href="#">Бесплатные</a><a href="/reviews/ru/">Обзоры</a><a href="/risk-calculator/?lang=ru">Калькулятор</a></nav>
+<a class="btn" href="#price">Подписаться</a><span class="burger">☰</span></header>
+
+<div class="wrap">
+<section class="hero">
+<div><p class="eyebrow">RSI Retest Scalper Pro · стратегия</p>
+<h1>Входите на <em>втором тесте,</em><br>а не на первом экстремуме.</h1>
+<p>Первый выход RSI в перекупленность или перепроданность — это только предупреждение. Стратегия ждёт остывания, повторного теста и подтверждения ценой. Индикатор сам находит этот момент, ставит стоп по структуре и показывает цели от 1R до 5R со статистикой.</p>
+<div class="cta-row"><a class="btn" href="#price">Подписаться — $29/мес</a><a class="btn o" href="#strategy">Как это работает ↓</a></div>
+<div class="tabs"><a class="on" href="#strategy">Стратегия</a><a href="#steps">Как торговать</a><a href="#examples">Примеры</a><a href="#targets">Цели 1R–5R</a><a href="#free">Free или Pro</a><a href="#faq">Вопросы</a></div></div>
+<div><div class="yt"><img src="https://i.ytimg.com/vi/13NBN0E3_uE/maxresdefault.jpg" alt=""><span class="play"></span></div>
+<p class="muted" style="margin-top:10px">▶ Полная видеоинструкция, 17 минут · <a href="#" style="color:var(--a)">подписаться на YouTube</a></p></div>
+</section>
+
+<section id="strategy"><p class="eyebrow">Идея стратегии</p><h2>Четыре шага <em>до входа</em></h2>
+<p class="muted">Каждый шаг проверяется только на закрытых свечах. На графике вы видите всю цепочку и можете проверить любую прошлую сделку.</p>
+<div class="steps">
+<div class="step"><div class="ico">⚪</div><h3>1. Первый экстремум</h3><p>RSI уходит в зону 30/70 (или 20/80). Отмечается кружком — это ещё не вход.</p></div>
+<div class="step"><div class="ico">〰️</div><h3>2. Остывание</h3><p>RSI отходит от экстремума — рынок «выдыхает» и готовит повторный тест.</p></div>
+<div class="step"><div class="ico">🔺</div><h3>3. Повторный тест</h3><p>Второй пик или дно RSI. Появляется треугольник — сетап готов.</p></div>
+<div class="step"><div class="ico">➡️</div><h3>4. Вход по цене</h3><p>Цена подтверждает разворот через линию входа — стрелка BUY или SELL, стоп и цели.</p></div>
+</div>
+<div class="row"><div class="shot"><b>Скрин 1 · вся цепочка на одном графике</b>Золото M5: кружок → треугольник → стрелка входа, видны стоп и цели 1R–5R</div>
+<div><h3 style="margin-top:0">Почему второй тест</h3><p>На первом экстремуме тренд часто продолжается, и вход «в разворот» бьёт по стопу. Повторный тест с более слабым импульсом показывает, что давление заканчивается. Стратегия забирает именно этот момент — с коротким стопом за структурой.</p></div></div>
+</section>
+
+<section id="steps"><p class="eyebrow">Как торговать по шагам</p><h2>От пресета <em>до сделки</em></h2>
+<div class="row"><div><span class="num">1</span><h3>Выберите пресет под свой рынок</h3><p>9 готовых пресетов: золото, евро, DAX, Ethereum и другие. В названии — инструмент, таймфрейм и цель (1R или 2R).</p></div><div class="real"><img src="/assets/settings-6905.jpg" alt=""></div></div>
+<div class="row rev"><div><span class="num">2</span><h3>Дождитесь стрелки входа</h3><p>Треугольник — подготовка, стрелка — вход. Уведомление приходит только на подтверждённый вход.</p></div><div class="shot"><b>Скрин 2 · момент входа крупно</b>Треугольник на RSI и стрелка на цене, видно, где цена пробила линию входа</div></div>
+<div class="row"><div><span class="num">3</span><h3>Стоп за структурой, цель из таблицы</h3><p>Стоп рассчитывается по структуре цены. Цель выбираете по статистике своего пресета: где выше профит-фактор, а не где больше цифра.</p></div><div class="real"><img src="/assets/stats-new.jpg" alt=""></div></div>
+<div class="row rev"><div><span class="num">4</span><h3>Сопровождение</h3><p>Дошли до 1R — можно перевести стоп в безубыток и держать часть позиции до 2R и дальше.</p></div><div class="shot"><b>Скрин 3 · сделка, дошедшая до 2R–3R</b>С отметками 1R, перенос в безубыток, цель</div></div>
+</section>
+
+<section id="examples"><p class="eyebrow">Примеры сделок</p><h2>Стратегия <em>на разных рынках</em></h2>
+<div class="cards">
+<div class="card"><div class="shot"><b>Скрин 4</b>Золото M5 · Kijun 26 · цель 2R</div><div class="t"><h3><span class="tag">2R</span>Золото M5</h3><p>Основной пресет: Smart Entry, линия Kijun 26.</p></div></div>
+<div class="card"><div class="shot"><b>Скрин 5</b>EURUSD M1 · EMA 42 · RSI 9 (80/20)</div><div class="t"><h3><span class="tag">1R</span>EURUSD M1</h3><p>Быстрые сделки на минутках с фильтром часов.</p></div></div>
+<div class="card"><div class="shot"><b>Скрин 6</b>Золото 15 сек · ALMA 12</div><div class="t"><h3><span class="tag">1R</span>Золото 15 сек</h3><p>Скальпинг: больше сигналов, короткие стопы.</p></div></div>
+</div>
+<p class="quote">«Место для вашей фразы: как вы сами торгуете по этому индикатору — 2–3 предложения»</p>
+</section>
+
+<section id="targets"><p class="eyebrow">Цели 1R–5R</p><h2>Таблица показывает, <em>какую цель брать</em></h2>
+<p>Для каждого пресета индикатор считает: сколько входов дошли до 1R, 2R… 5R и профит-фактор для каждой цели. Вы не гадаете — вы выбираете цель по истории своего инструмента.</p>
+<div class="note">Все цифры — результаты на истории, они не гарантируют будущих результатов.</div>
+</section>
+
+<section id="free"><p class="eyebrow">Free или Pro</p><h2>Бесплатная версия <em>и Pro</em></h2>
+<table class="vs"><tr><th></th><th>Free</th><th>Pro</th></tr>
+<tr><td>Сигналы ретеста RSI</td><td>✓</td><td>✓</td></tr>
+<tr><td>Режимы входа</td><td>базовый</td><td>Fast и Smart</td></tr>
+<tr><td>Линия подтверждения</td><td>базовая</td><td>расширенные настройки</td></tr>
+<tr><td>Историческая статистика</td><td>—</td><td>статистика по целям 1R–5R</td></tr>
+<tr><td>Уведомления</td><td>базовые</td><td>настраиваемые</td></tr>
+<tr><td>Готовые пресеты</td><td>—</td><td>9 пресетов</td></tr></table>
+<p class="muted" style="margin-top:14px"><a href="#" style="color:var(--a)">Попробовать бесплатную версию на TradingView ↗</a></p>
+</section>
+
+<section id="faq"><p class="eyebrow">Вопросы</p><h2>Частые <em>вопросы</em></h2>
+<p><b>Нужен платный TradingView?</b><br><span class="muted">[ответ]</span></p>
+<p><b>Как получить доступ после оплаты?</b><br><span class="muted">Через Trading Lab на TradingView — автоматически, в течение нескольких минут.</span></p>
+<p><b>На каких рынках работает?</b><br><span class="muted">[ответ]</span></p>
+</section>
+
+<section id="price" style="text-align:center;border-bottom:0"><p class="eyebrow">Trading Lab</p><h2>RSI Retest Pro и RCC Pro <em>в одной подписке</em></h2>
+<div class="price"><strong>$29<span> / месяц</span></strong><p>Оплата на TradingView, доступ автоматически, отмена в любой момент.</p><a class="btn" href="#" style="width:100%">Подписаться на TradingView ↗</a><p class="muted" style="margin:12px 0 0">Удобнее за год? $249 · карты РФ / СБП — 2 900 ₽ / мес</p></div>
+</section>
+</div>
+<footer>© Indicator Labs · josseliani</footer>
+</body></html>
